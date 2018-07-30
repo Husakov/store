@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import HttpService from '../services/http.service.js';
 import Product from '../product/product';
+import VideoView from '../components/videoview/Videoview';
+
 
 const http = new HttpService();
 
@@ -32,7 +34,9 @@ class App extends Component {
         </header>
       <div className="App-main">
           <Product/>
+          <VideoView/>
       </div>
+
       </div>
     );
   }
